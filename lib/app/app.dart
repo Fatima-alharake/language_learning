@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'app_startup.dart';
+
 class LanguageLearningApp extends StatelessWidget {
-  const LanguageLearningApp({super.key});
+  const LanguageLearningApp({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +15,7 @@ class LanguageLearningApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Language Learning App'),
-        ),
-      ),
+      home: const AppStartup(),
     );
   }
 }
